@@ -2,6 +2,7 @@ import React from "react";
 
 // props in the following is a parameter that receives objects as props(argument) from Instance of Card component...
 export default function Card(props) {
+    console.log(props)
     return (
             <div className="card">
                 <div className="img-container">

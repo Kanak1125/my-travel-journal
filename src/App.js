@@ -14,14 +14,14 @@ export default function App() {
           key = {item.id}
           index = {index}
           arrLength = {data.length}
-          {...item}
+          {...item}   // using spread syntax to transfer all the remaining properties of the object 
         />
     )
   })
   return (
     <div className="container">
       <Header />
-      {mappedData}
+      {mappedData}  {/*inside curly braces because its JS*/}
     </div>
   )
 }
