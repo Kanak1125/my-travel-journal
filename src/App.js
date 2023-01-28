@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Header from './components/Header';
+import Card from './components/Card';
+import './index.css';
+import data from './data';
 
-function App() {
+//app component
+export default function App() { 
+  const mappedData = data.map((item, index) => {
+    //passing the props to the Card component
+    
+    return (
+        <Card 
+          key = {item.id}
+          index = {index}
+          arrLength = {data.length}
+          {...item}
+        />
+    )
+  })
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <Header />
+      {mappedData}
     </div>
-  );
+  )
 }
-
-export default App;

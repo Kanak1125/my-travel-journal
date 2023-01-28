@@ -1,0 +1,13 @@
+.header {
+    background-color: #F55A5A;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+}
+
+.header i {
+    font-size: 24px;
+    margin-right: 5px;
+}
