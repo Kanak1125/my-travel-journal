@@ -1,4 +1,4 @@
-export default [
+const data = [
     {
         id: "1",
         title: "Tilicho Lake",
@@ -50,3 +50,5 @@ export default [
         imageUrl: "https://images.unsplash.com/photo-1562413181-9013f9846bff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8c2lra2ltfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60" 
     }
 ]
+
+export default data;

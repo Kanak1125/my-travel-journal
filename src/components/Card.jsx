@@ -6,13 +6,13 @@ export default function Card(props) {
     return (
             <div className="card">
                 <div className="img-container">
-                    <img src = {props.imageUrl} className = "img"/>
+                    <img src = {props.imageUrl} alt={'image'} className = "img"/>
                 </div>
                 <div className="info">
                     <div className="view-on-map">
                         <i className="fas fa-map-marker-alt"></i>
                         <p>{props.location}</p>
-                        <a href= {props.googleMapsUrl} target="_blank">View on google maps</a>
+                        <a href= {props.googleMapsUrl} target="_blank" rel="noreferrer">View on google maps</a>
                     </div>
                     <h2 className="place-name">{props.title}</h2>
                     <p className="date bold">
